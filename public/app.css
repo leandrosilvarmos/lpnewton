@@ -1,0 +1,324 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+hr {
+    width: 50%;
+    background-color: #FBFBFB;
+}
+
+
+h1 , h2 , p , a , li{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* MENU */
+
+nav {
+    background-color: #ffffff;
+    padding: 15px 0;
+}
+
+nav form {
+    margin-bottom: 0;
+}
+
+nav a{
+    color: #575756;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+}
+
+/* BANNER */
+
+.banner {
+    position: relative;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('./images/Grupo\ de\ máscara\ 3.png') center/cover no-repeat;
+    mix-blend-mode: multiply;
+    border: 1px solid #707070;
+    overflow: hidden;
+}
+
+.overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 24, 24, 0.5);
+    /* Cor escura com opacidade */
+}
+
+
+
+
+/* SEGUNDO BLOCO */
+
+.section-info-one {
+    display: flex;
+    align-items: center;
+    margin: 10% 0px;
+}
+
+.section-info-one img {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.text-container {
+    width: 40%;
+}
+
+.text-container h2,
+.text-container h3,
+.text-container p {
+    text-align: justify;
+    padding: 20px 0;
+}
+
+.section-info-one button {
+    margin-top: 10px;
+    width: 144px;
+    height: 45px;
+    background-color: #E42313;
+    border-radius: 5px;
+    color: #FBFBFB;
+}
+
+.button-left {
+    order: -1;
+}
+
+.section-info-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10% 0px;
+}
+
+.section-info-two img {
+    width: 40%;
+    /* Ajuste conforme necessário */
+    margin-left: 20px;
+    /* Alterado para margin-left para alinhar à direita */
+}
+
+@media (max-width: 600px) {
+    .section-info-one,
+    .section-info-two {
+        flex-direction: column;
+    }
+
+    .text-container {
+        margin: 20px 0;
+    }
+}
+
+/* TERCEIRO BLOCO */
+
+.spacer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    /* Mesma altura do banner */
+    background-color: #FBFBFB;
+}
+
+
+
+/* QUARTO BLOCO */
+
+.text-img-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(50% - 10px);
+    /* 50% de largura menos o espaçamento entre os blocos */
+    background-color: #f0f0f0;
+    /* Cor de fundo para destacar os blocos (opcional) */
+    padding: 20px;
+    /* Espaçamento interno dentro dos blocos */
+    box-sizing: border-box;
+}
+
+.text-img-section img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+    /* Espaçamento entre a imagem e o texto */
+}
+
+.text-img-section {
+    display: flex;
+    align-items: center;
+}
+
+.text-img-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.text-links-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.text-container,
+.links-container {
+    width: 100%;
+    max-width: 600px;
+    /* Ajuste o valor conforme necessário */
+}
+
+.links-container a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 5px 15px;
+    color: #E42313;
+    background: #d8d6d6;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.links-container i {
+    padding: 0 10px;
+    font-size: 25px;
+}
+
+.links-container a:last-child {
+    margin-right: 0;
+    /* Remove a margem à direita do último link */
+}
+
+.text-links-section .text-container p {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .spacer-section {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .text-links-section {
+        flex-direction: column;
+    }
+}
+
+
+/* FORMULARIO */
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 820px;
+    height: 50%;
+    background: #FBFBFB;
+    box-shadow: 7px 7px 15px #9C9C9C29;
+    border-radius: 10px;
+    opacity: 1;
+    margin: 5% 0;
+
+}
+
+.form-section form {
+    max-width: 400px; /* Ajuste conforme necessário */
+    width: 100%;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea,
+.form-section button {
+    margin-bottom: 15px;
+}
+
+
+
+.form-section button{
+    margin-top: 10px;
+    width: 144px;
+    height: 45px;
+    background-color: #E42313;
+    border-radius: 5px;
+    color: #FBFBFB;
+}
+
+
+.input-group input, 
+.input-group select , 
+.textarea-group textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+
+
+
+@media (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 8px;
+    }
+}
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #575756;
+    color: #FBFBFB;
+}
+
+
+.social-links li {
+    text-decoration: none;
+
+}
+
+.social-links a {
+    margin-left: 10px;
+    color: #FBFBFB;
+    font-size: 25px;
+    padding: 0 10px;
+    /* Adiciona espaçamento entre os links (opcional) */
+
+
+   
+}
